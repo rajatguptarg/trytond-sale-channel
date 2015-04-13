@@ -90,7 +90,10 @@ class SaleChannel(ModelSQL, ModelView):
         """
         Get the source
         """
-        return [('manual', 'Manual')]
+        return [
+            ('manual', 'Manual'),
+            ('webshop', 'Webshop')
+        ]
 
     @staticmethod
     def default_active():
